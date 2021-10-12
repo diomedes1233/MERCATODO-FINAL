@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .container1 {
+  width: 100%;
+  height: 100vh;
+
+  background-color: chartreuse;
+  background-image: url(https://c8.alamy.com/compes/2bk4d4g/carrito-de-compras-contra-el-pasillo-moderno-del-supermercado-fondo-borroso-2bk4d4g.jpg);
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 20%;
+  font-size: 14px;
+  height: 70vh;
+  margin-top: 80px;
+  justify-content: unsafe;
+  gap: 50px;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  width: 120%;
+  height: 40px;
+  border-color: #000;
+  column-gap: 20px;
+  background-color: #fd771730;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  /* margin-left: 50px; */
+  text-align: center;
+  justify-content: center;
+  margin-left: 65px;
+  background-color: #fe7614;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 900;
+}
