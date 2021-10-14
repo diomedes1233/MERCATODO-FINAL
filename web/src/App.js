@@ -1,20 +1,17 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import React from 'react'
-import { Main } from './pages/Main'
-// import { EmployeeRegistration } from './pages/EmployeeRegistration'
+import './App.css'
+import "bootstrap/dist/css/bootstrap.min.css"
+import NavBar from './components/NavBar/NavBar'
+import ProductsList from './components/productsCrud/ProductsList'
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Main} />
-          {/* { <Route path="/EmployeeRegistration" exact component={EmployeeRegistration} /> */}
-          {/* // <Route path="/menuburgers" exact component={MenuBurgers} />
-          // <Route path="/menuperros" exact component={MenuPerros} /> } */}
-        </Switch>
-      </Router>
+    <div className="App">
+      <NavBar/>
+      <div className="container my-4">
+        <ProductsList/>
+      </div>
     </div>
-  )
+  );
 }
-export default App
+
+export default App;
